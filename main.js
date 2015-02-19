@@ -215,16 +215,16 @@ manager.onMouseDown = function (button) {
 
         //initialize empty grid array
         var  grid = new Array;
-        for (var i = 0; i < canwidth/32 - 2; i++) {
+        for (var i = 0; i < canheight/32 - 3; i++) {
             grid[i] = new Array;
-            for (var j = 0; j < canheight/32 - 3; j++) {
+            for (var j = 0; j < canwidth/32 - 2; j++) {
                     grid[i][j] = "empty";
             }
         }
 
         //fill grid array with data
         for (var i = 0; i < inPlay.length; i++) {
-            grid[inPlay[i].x/32][inPlay[i].y/32] = inPlay[i].name;
+            grid[inPlay[i].y/32][inPlay[i].x/32] = inPlay[i].name;
         }
 
         var output = "";
@@ -317,7 +317,40 @@ manager.update = function (d) {
 
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FileSaver.js
  * A saveAs() FileSaver implementation.
@@ -563,5 +596,38 @@ if (typeof module !== "undefined" && module.exports) {
     return saveAs;
   });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 initGame("canvas");
