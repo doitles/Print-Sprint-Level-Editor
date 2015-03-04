@@ -87,6 +87,14 @@ function LoadContent() {
 	ink.y = 32 * 5;
 	ink.image = Textures.load("http://i.imgur.com/8nu5AKH.png");
 	ink.name = "ink";
+	
+	var unbreakble = new Sprite();
+	unbreakble.width = 32;
+	unbreakble.height = 32;
+	unbreakble.x = canwidth - 32;
+	unbreakble.y = 32 * 6;
+	unbreakble.image = Textures.load("http://i.imgur.com/yhmlxDR.png");
+	unbreakble.name = "unbreakble";
 
 	elements.push(start);
 	elements.push(end);
@@ -94,6 +102,7 @@ function LoadContent() {
 	elements.push(wall);
 	elements.push(pit);
 	elements.push(ink);
+	elements.push(unbreakble);
 
 	world.addChild(background);
 	world.addChild(start);
@@ -102,6 +111,7 @@ function LoadContent() {
 	world.addChild(wall);
 	world.addChild(pit);
 	world.addChild(ink);
+	world.addChild(unbreakble);
 	world.addChild(selection);
 }
 
