@@ -97,13 +97,13 @@ function LoadContent() {
 	ink.image = Textures.load("http://i.imgur.com/8nu5AKH.png");
 	ink.name = "ink";
 	
-	var unbreakble = new Sprite();
-	unbreakble.width = 32;
-	unbreakble.height = 32;
-	unbreakble.x = canwidth - 32;
-	unbreakble.y = 32 * 6;
-	unbreakble.image = Textures.load("http://i.imgur.com/yhmlxDR.png");
-	unbreakble.name = "unbreakble";
+	var unbreakable = new Sprite();
+	unbreakable.width = 32;
+	unbreakable.height = 32;
+	unbreakable.x = canwidth - 32;
+	unbreakable.y = 32 * 6;
+	unbreakable.image = Textures.load("http://i.imgur.com/yhmlxDR.png");
+	unbreakable.name = "unbreakable";
 	
 	var laserup = new Sprite();
 	laserup.width = 32;
@@ -147,7 +147,7 @@ function LoadContent() {
 	elements.push(laserright);
 	elements.push(laserdown);
 	elements.push(laserleft);
-	elements.push(unbreakble);
+	elements.push(unbreakable);
 
 	world.addChild(background);
 	world.addChild(start);
@@ -156,7 +156,7 @@ function LoadContent() {
 	world.addChild(wall);
 	world.addChild(pit);
 	world.addChild(ink);
-	world.addChild(unbreakble);
+	world.addChild(unbreakable);
 	world.addChild(laserup);
 	world.addChild(laserright);
 	world.addChild(laserdown);
